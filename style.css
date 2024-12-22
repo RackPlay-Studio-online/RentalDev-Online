@@ -1,0 +1,372 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2d;
+    color: white;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Set a fixed height for the nav bar */
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    margin-top: 70px;
+    backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.slash {
+    font-size: 25px;
+    padding: 20px;
+}
+
+.login-btn {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-left: 60px;
+}
+
+.signUp-btn {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-section .content {
+    z-index: 2;
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.features {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.features li::before {
+    content: "✓";
+    color: #4caf50;
+    margin-right: 0.5rem;
+}
+
+.cta-btn {
+    padding: 0.8rem 2rem;
+    background-color: #612a5a;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Spline Viewer */
+#spline-viewer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;/* Prevent interactions with the Spline viewer */
+}
+
+.hint {
+    position: absolute;
+    bottom: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    z-index: 2;
+}
+
+/* Examples Section */
+.examples-section {
+    padding: 2rem;
+    text-align: center;
+    /* background-color: #18181b; */
+}
+
+.examples-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.example-card {
+    background-color: #612a5a83;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 200px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.example-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.explore-btn{
+    padding: 0.8rem 2rem;
+    background-color: #612a5a83;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 60px;
+}
+
+.cardsDiscription{
+    font-size: 1.3rem;
+    margin-bottom: 60px;
+}
+
+/* General Section Styling */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+.form-container {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Form Styling */
+/* Form Section Styling */
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+.form-container {
+    max-width: 40%;
+    width: 100%;
+    text-align: left;
+    background-color: #2c2c3d;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input[type="email"], select {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #612a5a83; /* Button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Spline Container */
+.spline-container {
+    flex: 1;
+    height: 300px; /* Adjust height as needed */
+    background-color: transparent;
+}
+
+.spline-container #spline-viewer {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+
+/* Footer CSS Ssection */
+footer {
+    background-color: #612a5a83;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 150px; */
+}
+
+.footer-logo img {
+    width: 50px;
+    margin-bottom: 50px;
+
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-links div {
+    margin: 10px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #878585;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}

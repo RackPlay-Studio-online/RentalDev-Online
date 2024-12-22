@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Collaborative Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.54/build/spline-viewer.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+            <button class="login-btn">Log In</button>
+            <p class="slash">/</p>
+            <button class="signUp-btn">Sign Up</button>
+        </nav>
+    </header>
+    
+    <section class="hero-section">
+        <!-- Spline Viewer -->
+        <spline-viewer
+            url="https://prod.spline.design/7t56XCnEMOMOG2Kn/scene.splinecode"
+            id="spline-viewer"
+        ></spline-viewer>
+
+        <!-- Content Overlay -->
+        <div class="content">
+            <h1>RentalDEV, a place to get 3D designed models.</h1>
+            <ul class="features">
+                <li>Web-Based</li>
+                <li>Real-time</li>
+                <li>Collaborative</li>
+            </ul>
+            <button class="cta-btn">Get started — it's free →</button>
+        </div>
+        <!-- <p class="hint">Press and drag to orbit</p> -->
+    </section>
+<!-- Forms -->
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Get Asset Store News</h2>
+            <form class="subscribe-form">
+                <div class="form-group">
+                    <input type="email" placeholder="Enter your email address" required />
+                    <button type="submit">Sign Up</button>
+                </div>
+                <div class="form-group">
+                    <select>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="spline-container">
+            <spline-viewer
+            url="https://prod.spline.design/6tECTOuLBxXxTkJR/scene.splinecode"
+            id="spline-viewer3"
+        ></spline-viewer>
+        </div>
+    </section>
+
+<!-- Cards -->
+    <section class="examples-section">
+        <h1 >Explore the latest examples</h1>
+        <p class="cardsDiscription">Try remixing a 3D design by opening it.</p>
+        <div class="examples-container">
+            <div class="example-card">
+                <img src="Images/0360.png" alt="3D Text">
+                <p>3D models for commercial</p>
+            </div>
+            <div class="example-card">
+                <img src="Images/bugatti-1651718_1280.png" alt="Interactive 3D Experience">
+                <p>3D vehicles</p>
+            </div>
+            <div class="example-card">
+                <img src="Images/Screenshot 2024-12-22 143016.png" alt="Interactive 3D Experience">
+                <p>Intrior assets</p>
+            </div>
+            <div class="example-card">
+                <img src="Images/Screenshot 2024-12-22 143150.png" alt="Interactive 3D Experience">
+                <p>Lowpoly weapoons</p>
+            </div>
+            <!-- Add more example cards as needed -->
+        </div>
+        <button class="explore-btn">Explore → </button>
+    </section>
+
+<!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <!-- <img src="logo.png" alt="Logo" /> -->
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>Sell on RentalDev</h4>
+                    <ul>
+                        <li><a href="#" class="footerLinkText">Sell Assets</a></li>
+                        <li><a href="#">Submission Guidelines</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Dasboard</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Partners</h4>
+                    <ul>
+                        <li><a href="#">A</a></li>
+                        <li><a href="#">B</a></li>
+                        <li><a href="#">C</a></li>
+                        <li><a href="#">D</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:help@spline.design">rackplaystudio@gmail.com</a></li>
+                        <li><a href="mailto:jobs@spline.design">jobs@spline.design</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>©2024 - RentalDev</p>
+                <div class="social-icons">
+                    <a href="#"><img src="icon1.png" alt="Social" /></a>
+                    <a href="#"><img src="icon2.png" alt="Social" /></a>
+                    <a href="#"><img src="icon3.png" alt="Social" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
