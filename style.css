@@ -4,7 +4,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1e1e2d;
     color: white;
-    /* overflow: hidden; */
     overflow-x: hidden;
 }
 
@@ -19,47 +18,47 @@ header {
     z-index: 10;
 }
 
+/* Navigation Bar Styling */
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 60px; /* Set a fixed height for the nav bar */
     position: fixed;
+    top: 0;
     width: 100%;
-    z-index: 10000;
-    margin-top: 70px;
+    z-index: 10;
     backdrop-filter: blur(10px);
+    padding: 0 1rem;
 }
 
-.navbar ul {
+.nav-menu {
     list-style: none;
     display: flex;
     gap: 2rem;
-    
+    transition: max-height 0.3s ease;
 }
 
-.navbar a {
+.nav-menu a {
+    color: white;
     text-decoration: none;
-    color: white;
     font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-.slash {
-    font-size: 25px;
-    padding: 20px;
+.nav-menu a:hover {
+    color: #ff7f50;
 }
 
-.login-btn {
-    padding: 0.5rem 1rem;
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    margin-left: 60px;
+/* Authentication Buttons */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 200px;
 }
 
+.login-btn,
 .signUp-btn {
     padding: 0.5rem 1rem;
     background: transparent;
@@ -68,6 +67,61 @@ header {
     cursor: pointer;
     border-radius: 4px;
     font-size: 0.9rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn:hover,
+.signUp-btn:hover {
+    background-color: #ff7f50;
+    color: white;
+}
+
+.slash {
+    font-size: 25px;
+    color: white;
+}
+
+/* Add or modify this part in your existing CSS */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #46214141;
+    width: 100%;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+    }
 }
 
 /* Hero Section */
@@ -130,7 +184,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;/* Prevent interactions with the Spline viewer */
+    z-index: 1;
 }
 
 .hint {
@@ -139,51 +193,6 @@ h1 {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.9rem;
     z-index: 2;
-}
-
-/* Examples Section */
-.examples-section {
-    padding: 2rem;
-    text-align: center;
-    /* background-color: #18181b; */
-}
-
-.examples-container {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.example-card {
-    background-color: #612a5a83;
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    width: 200px;
-    padding: 1rem;
-    text-align: center;
-}
-
-.example-card img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.explore-btn{
-    padding: 0.8rem 2rem;
-    background-color: #612a5a83;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 60px;
-}
-
-.cardsDiscription{
-    font-size: 1.3rem;
-    margin-bottom: 60px;
 }
 
 /* General Section Styling */
@@ -269,22 +278,51 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Spline Container */
-.spline-container {
-    flex: 1;
-    height: 300px; /* Adjust height as needed */
-    background-color: transparent;
+/* Examples Section */
+.examples-section {
+    padding: 2rem;
+    text-align: center;
 }
 
-.spline-container #spline-viewer {
-    width: 100%;
-    height: 100%;
+.examples-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.example-card {
+    background-color: #612a5a83;
+    backdrop-filter: blur(10px);
     border-radius: 10px;
-    overflow: hidden;
+    width: 200px;
+    padding: 1rem;
+    text-align: center;
 }
-  
 
-/* Footer CSS Ssection */
+.example-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.explore-btn {
+    padding: 0.8rem 2rem;
+    background-color: #612a5a83;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 60px;
+}
+
+.cardsDiscription {
+    font-size: 1.3rem;
+    margin-bottom: 60px;
+}
+
+/* Footer */
 footer {
     background-color: #612a5a83;
     color: #ffffff;
@@ -297,13 +335,11 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* margin-top: 150px; */
 }
 
 .footer-logo img {
     width: 50px;
     margin-bottom: 50px;
-
 }
 
 .footer-links {
@@ -314,24 +350,10 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer-links div {
-    margin: 10px;
-}
-
 .footer-links h4 {
     margin-bottom: 10px;
     font-size: 16px;
     font-weight: bold;
-}
-
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links li {
-    margin-bottom: 8px;
 }
 
 .footer-links a {

@@ -66,3 +66,19 @@ window.addEventListener("resize", () => {
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
+
+function toggleMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('active');
+}
+
+// Select elements
+const menuIcon = document.querySelector('.menu-icon');
+const navMenu = document.querySelector('.nav-menu');
+
+// Add event listener to the hamburger menu icon
+menuIcon.addEventListener('click', () => {
+    // Toggle the 'active' class on the nav-menu
+    navMenu.classList.toggle('active');
+});
+

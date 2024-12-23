@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Collaborative Design</title>
+    <title>Rental DEV</title>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.54/build/spline-viewer.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <!-- Hamburger Icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#">Product</a></li>
                 <li><a href="#">Resources</a></li>
                 <li><a href="#">Community</a></li>
                 <li><a href="#">Customers</a></li>
                 <li><a href="#">Pricing</a></li>
             </ul>
-            <button class="login-btn">Log In</button>
-            <p class="slash">/</p>
-            <button class="signUp-btn">Sign Up</button>
+            <div class="auth-buttons">
+                <button class="login-btn">Log In</button>
+                <p class="slash">/</p>
+                <button class="signUp-btn">Sign Up</button>
+            </div>
         </nav>
     </header>
+    
     
     <section class="hero-section">
         <!-- Spline Viewer -->
@@ -45,11 +55,11 @@
 <!-- Forms -->
     <section class="form-section">
         <div class="form-container">
-            <h2>Get Asset Store News</h2>
+            <h2>Join Beta for assets</h2>
             <form class="subscribe-form">
                 <div class="form-group">
                     <input type="email" placeholder="Enter your email address" required />
-                    <button type="submit">Sign Up</button>
+                    <button type="submit">Join</button>
                 </div>
                 <div class="form-group">
                     <select>
