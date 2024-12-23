@@ -28,6 +28,8 @@ header {
     width: 100%;
     z-index: 10;
     backdrop-filter: blur(10px);
+    border-radius: 10px; /* Optional: for rounded corners */
+
     padding: 0 1rem;
 }
 
@@ -101,6 +103,8 @@ header {
     list-style: none;
     display: flex;
     gap: 2rem;
+    backdrop-filter: blur(25px);
+
 }
 
 .nav-menu.active {
@@ -109,9 +113,13 @@ header {
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #46214141;
+    background-color: #a0118c63;
     width: 100%;
     padding: 1rem;
+    backdrop-filter: blur(25px); /* Applies the blur */
+    -webkit-backdrop-filter: blur(25px); /* Safari support */
+    border-radius: 10px; /* Optional: for rounded corners */
+
 }
 
 @media (max-width: 768px) {
