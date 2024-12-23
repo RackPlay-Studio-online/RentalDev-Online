@@ -286,6 +286,89 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* General Section Styling */
+.info-section {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Adds space between text and image */
+    padding: 20px;
+    
+}
+
+.info-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #612a5a; /* Add your theme color */
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    padding-top: 20px;
+}
+
+.info-section p {
+    font-size: 20.8px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 40px;
+    padding-bottom: 20px;
+
+}
+
+.info-section .container {
+    max-width: 40%;
+    max-width: 100%;
+    background-color: #2c2c3d;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+}
+
+.info-section2{
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Adds space between text and image */
+    padding: 20px;
+
+    .container{
+        max-width: 40%;
+        max-width: 100%;
+        background-color: #2c2c3d;
+        border-radius: 10px;
+        margin: 0 auto;
+        
+    }
+}
+
+.info-section2 h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #612a5a; /* Add your theme color */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.info-section2 p{
+    font-size: 20.8px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 40px; 
+    padding-bottom: 20px;
+}
+
+
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+    .info-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-section p {
+        font-size: 1rem;
+    }
+}
+
+
 /* Examples Section */
 .examples-section {
     padding: 2rem;
