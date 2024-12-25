@@ -298,7 +298,7 @@ button:hover {
 .info-section h2 {
     text-align: center;
     font-size: 2rem;
-    color: #612a5a; /* Add your theme color */
+    color: #ffffff; /* Add your theme color */
     margin-bottom: 20px;
     text-transform: uppercase; 
     padding-top: 20px;
@@ -341,7 +341,7 @@ button:hover {
 .info-section2 h2{
     text-align: center;
     font-size: 2rem;
-    color: #612a5a; /* Add your theme color */
+    color: #ffffff; /* Add your theme color */
     margin-bottom: 20px;
     text-transform: uppercase;
     padding-top: 20px;
@@ -355,7 +355,41 @@ button:hover {
     padding-bottom: 20px;
 }
 
+.about-section{
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Adds space between text and image */
+    padding: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
 
+    .container{
+        max-width: 40%;
+        max-width: 100%;
+        background-color: #612a5a83;
+        border-radius: 10px;
+        margin: 0 auto;
+        
+    }
+}
+
+.about-section h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff; /* Add your theme color */
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
+    padding-top: 20px;
+}
+
+.about-section p{
+    font-size: 20.8px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 40px; 
+    padding-bottom: 20px;
+    text-align: center;
+}
 
 /* Add media query for responsiveness */
 @media (max-width: 768px) {
@@ -368,6 +402,55 @@ button:hover {
     }
 }
 
+.support-section{
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Adds space between text and image */
+    padding: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
+
+    .container{
+        max-width: 40%;
+        max-width: 100%;
+        background-color: #612a5a83;
+        border-radius: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.support-btn{
+    padding: 0.8rem 2rem;
+    background-color: #525261;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* margin-top: 20px; */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.support-section h2{
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff; /* Add your theme color */
+    margin-bottom: 20px;
+    /* text-transform: uppercase; */
+    padding-top: 20px;
+}
+
+.support-section p{
+    font-size: 20.8px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 40px; 
+    padding-bottom: 20px;
+    text-align: center;
+}
 
 /* Examples Section */
 .examples-section {
